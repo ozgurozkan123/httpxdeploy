@@ -2,7 +2,8 @@ import os
 import subprocess
 from fastmcp import FastMCP
 
-mcp = FastMCP("httpx-mcp", version="1.0.0", allow_server_logs=True)
+# Initialize MCP server
+mcp = FastMCP("httpx-mcp", version="1.0.0")
 
 @mcp.tool()
 def httpx(
